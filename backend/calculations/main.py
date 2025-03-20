@@ -10,8 +10,6 @@ with load.open(hipparcos.URL) as f:
 visible_stars = df[df["magnitude"] < 6]
 best = [None, float('inf')]
 
-print(visible_stars.columns)
-
 for index, star in visible_stars.iterrows():
     az = guy.azimuth_of_star(star.dec_degrees, star.ra_degrees)
     if az <= best[1]:
