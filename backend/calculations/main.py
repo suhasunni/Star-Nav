@@ -1,18 +1,24 @@
 from skyfield.api import load 
 from skyfield.data import hipparcos
-from observer import Observer
+from observer import distance_to, bearing_to, azimuth_of_star
+from commonStarNames import get_star_name
 
-guy = Observer(43.7315, -79.7624)
+obs = {"lat": 43.73, "lon": -79.76}
+destination = {"lat": 40.71, "lon": -74}
+
+bearing = bearing_to(obs["lat"], obs["lon"], destination["lat"], destination["lon"])
+distance = distance_to(obs["lat"], obs["lon"], destination["lat"], destination["lon"])
+
+print(bearing, distance)
 
 with load.open(hipparcos.URL) as f:
     df = hipparcos.load_dataframe(f)
 
-visible_stars = df[df["magnitude"] < 6]
-best = [None, float('inf')]
+visible_stars = df[df["magnitude"] <= 3]
+best = [float("inf"), None]
 
 for index, star in visible_stars.iterrows():
-    az = guy.azimuth_of_star(star.dec_degrees, star.ra_degrees)
-    if az <= best[1]:
-        best = [index, az]
-
-print(best)
+    az_star = azimuth_of_star(obs["lat"], obs["lon"], star.dec_degrees, star.ra_degrees)
+    if abs(bearing-az_star) <= best[0]:
+        best = [abs(bearing-az_star), index]
+print("final: ", get_star_name(best[1]), " error: ", best[0])
