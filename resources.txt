@@ -1,3 +1,4 @@
 https://www.movable-type.co.uk/scripts/latlong.html
 https://en.wikipedia.org/wiki/Solar_azimuth_angle 
 https://www.omnicalculator.com/other/azimuth
+https://www.cosmos.esa.int/web/hipparcos/common-star-names#
