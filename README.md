@@ -2,7 +2,7 @@
 <p>
   ⭐Embark on your next journey using Star-Nav, a navigation system using celestial bodies!⭐
   
-🔧 Written in <strong>Python</strong> and using <strong>Django</strong>, this project calculates the ideal star to follow based on your location and time. 🔧
+🔧 Written in <strong>Python</strong> and using <strong>Django</strong>, this project calculates the ideal star to follow based on your current location and time. 🔧
   
   🧭Using real-time star positions and precise mathematical calculations, this application guides you across the night sky, using the stars as your compass to navigate you to your destination.🧭
 </p>
