@@ -98,4 +98,4 @@ def get_star_name(hip_number):
         60936: "3C 273"
     }
     
-    return False if hip_number not in stars else stars[hip_number]
+    return None if hip_number not in stars else stars[hip_number]
