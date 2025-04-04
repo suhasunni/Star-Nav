@@ -13,9 +13,8 @@ def star(request):
     ):
         return JsonResponse({
             "result": "error",
-            "error": "1 or more parameters not found."
-        })
+        }, status=404)
 
     obs_lat, obs_lon, target_azimuth = float(obs_lat), float(obs_lon), float(target_azimuth)
 
-    return JsonResponse(get_best_star(obs_lat, obs_lon, target_azimuth))
+    return JsonResponse({"result":get_best_star(obs_lat, obs_lon, target_azimuth)})

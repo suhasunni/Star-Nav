@@ -15,9 +15,8 @@ def bearing(request):
         or not end_lon
     ):
         return JsonResponse({
-            "result": "error",
             "error": "1 or more parameters not found."
-        })
+        }, status=404)
     
     obs_lat, obs_lon, end_lat, end_lon = float(obs_lat), float(obs_lon), float(end_lat), float(end_lon)
 
