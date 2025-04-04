@@ -15,5 +15,5 @@
     <li> <a href="https://github.com/skyfielders/python-skyfield">Skyfield GitHub Repository<a/></li>
   </ul>
   Skyfield is licensed under the <a href="http://opensource.org/license/MIT">MIT License</a>.  
-  Other resources used during the research and development process of this project are linked in <a href="https://github.com/suhasunni/star_nav/blob/main/resources.txt">resourses.txt</a>.
+  Other resources used during the research and development process of this project are linked in <a href="https://github.com/suhasunni/star_nav/blob/main/resources.txt">resources.txt</a>.
 </p>
