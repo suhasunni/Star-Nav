@@ -6,12 +6,7 @@ import './map.css'
 
 function Map() {
     
-    const [data, setData] = useState(null);
-    useEffect(() => {
-        fetch("http://127.0.0.1:8000/star?obs_lat=40&obs_lon=-77&target_azimuth=0")
-        .then((res) => res.json())
-        .then(setData)
-    }, []);
+
     
     const startPosition: LatLngExpression = [43,-77]
     const [position, setPosition] = useState<LatLngExpression>(startPosition);
