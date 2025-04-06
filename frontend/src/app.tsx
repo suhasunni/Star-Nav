@@ -10,7 +10,7 @@ export const endLatLonContext = createContext<[LatLngTuple, React.Dispatch<React
 
 function App() {
     
-    const [ startLatLon, setStartLatLon ] = useState<LatLngTuple>([43, -77]);
+    const [ startLatLon, setStartLatLon ] = useState<LatLngTuple>([40.71, -74.00]);
     const [ endLatLon, setEndLatLon ] = useState<LatLngTuple>([45, -77]);
     
     
