@@ -16,14 +16,17 @@ function App() {
     
     return (
         <BrowserRouter>
-            <startLatLonContext.Provider value={[startLatLon, setStartLatLon]}>
-                <Routes>
-                    <Route path="/" element={<Start/>}/>
-                    <Route path="/target" element={<Target/>}/>
-                    <Route path="/sky" element={<Sky/>}/>
-                </Routes>
-            </startLatLonContext.Provider>
-            
+            <endLatLonContext.Provider value={[endLatLon, setEndLatLon]}>
+                <startLatLonContext.Provider value={[startLatLon, setStartLatLon]}>
+                    <div className="bg">
+                        <Routes>
+                            <Route path="/" element={<Start/>}/>
+                            <Route path="/target" element={<Target/>}/>
+                            <Route path="/sky" element={<Sky/>}/>
+                        </Routes>
+                    </div>
+                </startLatLonContext.Provider>
+            </endLatLonContext.Provider>  
         </BrowserRouter>
     )
 }

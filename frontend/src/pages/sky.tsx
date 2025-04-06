@@ -1,4 +1,10 @@
+import "./sky.css"
+
 function Sky() {
-    return <h1>page 3</h1>;
+    return (
+        <div className="bg">
+            
+        </div>
+    );
 }
 export default Sky

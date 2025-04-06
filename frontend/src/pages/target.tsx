@@ -1,4 +1,10 @@
+import "./target.css"
+
 function Target() {
-    return <h1>page 2</h1>;
+    return (
+        <div className="bg">
+            <h1>hello</h1>
+        </div>
+    )
 }
 export default Target

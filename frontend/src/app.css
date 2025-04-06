@@ -1,0 +1,11 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+.bg {
+    background-image: url("/background_stars.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}

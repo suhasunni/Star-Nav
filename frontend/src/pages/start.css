@@ -1,0 +1,34 @@
+.page {
+    display: flex;
+    flex-direction: column;
+}
+
+.leaflet-container {
+    height: 65vh;
+    width: 130vh;
+    margin: 0 auto;
+}
+
+.above-above-map {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    
+}
+
+.above-above-map p {
+    margin-top: -10px;
+}
+
+.above-map {
+    display: flex;
+    height: 15vh;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 40px
+}
