@@ -7,6 +7,9 @@
 🖥️ A <strong>React</strong>-powered frontend featuring an embedded Leaflet map for intuitive and seamless navigation. 🖥️
   
   🧭Using real-time star positions and precise mathematical calculations, this application guides you across the night sky, using the stars as your compass to navigate you to your destination.🧭
+
+  <a href="https://www.youtube.com/watch?v=WPLQ-A7yl60">Video Demo</a>
+  
 </p>
 
 <p>
