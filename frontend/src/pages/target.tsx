@@ -17,7 +17,7 @@ function Target() {
     }
     
     const [endLatLon, setEndLatLon] = endContext;
-    const [startLatLon, setStartLatLon] = startContext;
+    const [startLatLon, ____ ] = startContext;
     
     useEffect(() => {
         if (startLatLon) {
@@ -142,7 +142,7 @@ function Target() {
                     <StartMarker/>
                     <DraggableLocationMarker/>
                 </MapContainer>
-                <button className="next" onClick={() => navigator("/star")}>
+                <button className="next" onClick={() => navigator("/sky")}>
                     GET DIRECTIONS
                 </button>
             </div>

@@ -79,7 +79,7 @@ function Start() {
         <div className="page">
             <div className="above-above-map">
                 <h2>Where Will You Be Starting Your Journey?</h2>
-                <p>click anywhere on the map to locate yourself or enter cordinates yourself</p>
+                <p>click anywhere on the map to locate yourself OR enter cordinates yourself</p>
             </div>
             <div >
                 <form className="above-map" onSubmit={e => handleFormSubmit(e)}>

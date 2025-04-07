@@ -14,3 +14,7 @@ html, body {
 .bg h1 {
     margin: 0;
 }
+
+h1 {
+    color: whitesmoke;
+}
