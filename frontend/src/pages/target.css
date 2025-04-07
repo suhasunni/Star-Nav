@@ -1,3 +1,7 @@
-h1 {
-    color: whitesmoke;
+.prev {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    margin-left: 90px;
+    height: 5vh;
 }

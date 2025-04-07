@@ -1,16 +1,16 @@
-import { useContext, useState, FormEvent, useMemo, useRef, useEffect } from "react";
+import { useContext, useState, FormEvent, useMemo, useRef } from "react";
 import { startLatLonContext } from "../app";
 import { MapContainer, TileLayer, useMapEvents, Marker } from "react-leaflet";
-import "./start.css"
+import "./start.css";
 import 'leaflet/dist/leaflet.css';
 import { useNavigate } from "react-router-dom";
-import { Marker as LeafletMarker, map } from 'leaflet';
+import { Marker as LeafletMarker } from 'leaflet';
 
 
 function Start() {
     
     const context = useContext(startLatLonContext);
-    const nextPage = useNavigate();
+    const navigator = useNavigate();
 
     if (!context) {
         throw Error("no starting postion");
@@ -100,7 +100,7 @@ function Start() {
                     />
                     <DraggableLocationMarker/>
                 </MapContainer>
-                <button className="next" onClick={() => nextPage("/target")}>
+                <button className="next" onClick={() => navigator("/target")}>
                     NEXT
                 </button>
             </div>
